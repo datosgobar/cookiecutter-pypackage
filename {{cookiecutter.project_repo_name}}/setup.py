@@ -3,22 +3,18 @@
 
 from setuptools import setup
 
-with open('README.rst') as readme_file:
+with open('README.md') as readme_file:
     readme = readme_file.read()
 
-with open('HISTORY.rst') as history_file:
+with open('HISTORY.md') as history_file:
     history = history_file.read()
 
-requirements = [
-    {%- if cookiecutter.command_line_interface|lower == 'click' %}
-    'Click>=6.0',
-    {%- endif %}
-    # TODO: put package requirements here
-]
+with open("requirements.txt") as f:
+    requirements = [req.strip() for req in f.readlines()]
 
-test_requirements = [
-    # TODO: put package test requirements here
-]
+with open("requirements_dev.txt") as f:
+    test_requirements = [req.strip() for req in f.readlines()]
+
 
 {%- set license_classifiers = {
     'MIT license': 'License :: OSI Approved :: MIT License',

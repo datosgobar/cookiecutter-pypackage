@@ -6,7 +6,7 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   readme
+   README.md
    installation
    usage
    contributing
