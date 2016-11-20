@@ -11,3 +11,4 @@ cryptography==1.4
 PyYAML==3.11{% endif %}
 {% if cookiecutter.use_pytest == 'y' -%}
 pytest==2.9.2{%- endif %}
+recommonmark==0.5.4
