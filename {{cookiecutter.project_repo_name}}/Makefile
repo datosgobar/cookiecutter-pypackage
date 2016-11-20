@@ -92,3 +92,10 @@ dist: clean ## builds source and wheel package
 
 install: clean ## install the package to the active Python's site-packages
 	python setup.py install
+
+register: ## register the package to PyPi
+	python setup.py register
+
+pypi: ## register the package to PyPi get travis ready to deploy to pip
+	python setup.py register
+	python travis_pypi_setup.py
