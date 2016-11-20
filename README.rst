@@ -2,6 +2,19 @@
 Cookiecutter PyPackage
 ======================
 
+*Nota: Este proyecto recién está comenzando a ser una **idea**, no está apto para ser usado todavía.*
+
+## Instrucciones para crear un repositorio nuevo
+
+* Crear repositorio en Github y clonarlo
+* Usar *cookiecutter* para crear estructura del repo. Moverla a la carpeta del repo clonado.
+* Agregar el repo a Travis CI (switch on para este repo)
+* Correr `make pypi` para registrar el repo en Pip y agregar auto-deploy con tags en Travis
+  - python setup.py register
+  - python travis_pypi_setup.py
+* Correr `make docs` para crear la documentación para Read The Docs correctamente.
+
+
 .. image:: https://pyup.io/repos/github/audreyr/cookiecutter-pypackage/shield.svg
      :target: https://pyup.io/repos/github/audreyr/cookiecutter-pypackage/
      :alt: Updates
