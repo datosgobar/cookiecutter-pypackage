@@ -19,6 +19,8 @@
 
 *AYUDA: ¿Qué dependencias del sistema son necesarias? ¿Tests/pruebas post instalación? Usar screenshots/gifs (si cabe).*
 
+* `cd path/to/{{ cookiecutter.project_repo_name }}` y `pip install -e .` para instalar el repo clonado localmente en *modo developer* (cualquier cambio en el código está disponible en el entorno virtual donde fue instalado).
+
 ## Uso
 
 *AYUDA: Ejemplo rápido. Usar screenshots/gifs (si cabe).*
