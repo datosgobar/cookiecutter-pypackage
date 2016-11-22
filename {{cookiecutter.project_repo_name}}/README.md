@@ -1,7 +1,6 @@
 {% set is_open_source = cookiecutter.open_source_license != 'Not open source' -%}
 
-{{ cookiecutter.project_name }}
-===
+# {{ cookiecutter.project_name }}
 
 [![Coverage Status](https://coveralls.io/repos/{{ cookiecutter.github_username }}/{{ cookiecutter.project_repo_name }}/badge.svg?branch=master)](https://coveralls.io/r/{{ cookiecutter.github_username }}/{{ cookiecutter.project_repo_name }}?branch=master)
 [![Build Status](https://travis-ci.org/{{ cookiecutter.github_username }}/{{ cookiecutter.project_repo_name }}.svg?branch=master)](https://travis-ci.org/{{ cookiecutter.github_username }}/{{ cookiecutter.project_repo_name }})
@@ -31,3 +30,9 @@
 ## Créditos
 
 *AYUDA: ¿Usás código de otra persona/organización? ¿Alguien o algo fue una fuente de inspiración/asesoramiento/ayuda para este repositorio? ¿Es esto un fork?*
+
+## Contacto
+
+Te invitamos a [crearnos un issue](https://github.com/datosgobar/{{ cookiecutter.project_repo_name }}/issues/new?title=Encontre un bug en {{ cookiecutter.project_repo_name }}) en caso de que encuentres algún bug o tengas feedback de alguna parte de `{{ cookiecutter.project_repo_name }}`.
+
+Para todo lo demás, podés mandarnos tu comentario o consulta a [datos@modernizacion.gob.ar](mailto:datos@modernizacion.gob.ar).
