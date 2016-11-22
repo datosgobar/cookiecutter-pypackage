@@ -35,13 +35,13 @@ Cookiecutter 1.4.0 o mayor)::
 
 Para más detalles ver [cookiecutter-pypackage tutorial](https://cookiecutter-pypackage.readthedocs.io/en/latest/tutorial.html).
 
-## Otros cookiecutter templates para python
+## Otros cookiecutter templates
 
 Ver repositorio de [audrey/cookiecutter-pypackage](https://github.com/audreyr/cookiecutter-pypackage/) para otros templates de repos en python o directamente el de [audreyr/cookiecutter](https://github.com/audreyr/cookiecutter) para una lista de templates de todo tipo.
 
 ## Créditos
 
-* @audrey por su fantástico *ultimate template* para un repositorio modelo en Python [audrey/cookiecutter-pypackage](https://github.com/audreyr/cookiecutter-pypackage/).
+* [@audrey](https://github.com/audrey) por su fantástico *ultimate template* para un repositorio modelo en Python [audrey/cookiecutter-pypackage](https://github.com/audreyr/cookiecutter-pypackage/).
 
 ## Contacto
 
