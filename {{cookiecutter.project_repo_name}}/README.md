@@ -3,11 +3,11 @@
 {{ cookiecutter.project_name }}
 ===
 
-[![Coverage Status](https://coveralls.io/repos/{{ cookiecutter.github_username }}/{{ cookiecutter.project_repo_name }}/badge.svg?branch=master)](https://coveralls.io/r/{{ cookiecutter.github_username }}/{{ cookiecutter.project_repo_name }}?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/{{ cookiecutter.github_username }}/{{ cookiecutter.project_repo_name }}/badge.svg?branch=master)](https://coveralls.io/github/{{ cookiecutter.github_username }}/{{ cookiecutter.project_repo_name }}?branch=master)
 [![Build Status](https://travis-ci.org/{{ cookiecutter.github_username }}/{{ cookiecutter.project_repo_name }}.svg?branch=master)](https://travis-ci.org/{{ cookiecutter.github_username }}/{{ cookiecutter.project_repo_name }})
 [![PyPI](https://badge.fury.io/py/{{ cookiecutter.project_repo_name }}.svg)](http://badge.fury.io/py/{{ cookiecutter.project_repo_name }})
 [![Stories in Ready](https://badge.waffle.io/{{ cookiecutter.github_username }}/{{ cookiecutter.project_repo_name }}.png?label=ready&title=Ready)](https://waffle.io/{{ cookiecutter.github_username }}/{{ cookiecutter.project_repo_name }})
-[![Documentation Status](http://readthedocs.org/projects/{{ cookiecutter.project_repo_name }}/badge/?version=latest)](http://data-cleaner.readthedocs.org/en/latest/?badge=latest)
+[![Documentation Status](http://readthedocs.org/projects/{{ cookiecutter.project_repo_name }}/badge/?version=latest)](http://{{ cookiecutter.project_repo_name }}.readthedocs.org/en/latest/?badge=latest)
 
 {{ cookiecutter.project_short_description }}
 

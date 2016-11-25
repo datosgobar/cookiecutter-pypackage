@@ -1,12 +1,12 @@
 {% if cookiecutter.create_author_file == 'y' %}
 include AUTHORS.rst
 {% endif %}
-include CONTRIBUTING.rst
-include HISTORY.rst
+include HISTORY.md
 include LICENSE
-include README.rst
+include README.md
 
 recursive-include tests *
+recursive-include {{cookiecutter.project_slug}} *
 recursive-exclude * __pycache__
 recursive-exclude * *.py[co]
 
