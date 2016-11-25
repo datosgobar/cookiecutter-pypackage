@@ -12,7 +12,7 @@
 
 {% if is_open_source %}
 * Licencia: {{ cookiecutter.open_source_license }}
-* Documentación: https://{{ cookiecutter.project_repo_name | replace("_", "-") }}.readthedocs.io.
+* Documentación: https://{{ cookiecutter.project_repo_name | replace("_", "-") }}.readthedocs.io
 {% endif %}
 
 ## Instalación
