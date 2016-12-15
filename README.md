@@ -3,13 +3,13 @@
 
 Cookiecutter template para paquetes de Python del equipo de Datos Argentina.
 
-*Nota: Este proyecto recién está comenzando a ser una **idea**, usar con precaución. Todavía deben adaptarse/traducirse varias partes y eliminar algunas cosas que no usamos.*
+*Nota: Todavía deben adaptarse/traducirse varias partes y eliminar algunas cosas que no usamos.*
 
 Esto es un fork del [audrey/cookiecutter-pypackage](https://github.com/audreyr/cookiecutter-pypackage/) que estamos adaptando y traduciendo para uso de los nuevos repositorios pythonicos del equipo de Datos.
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+## Indice
 
 - [Features](#features)
 - [Instalación](#instalaci%C3%B3n)
@@ -24,7 +24,7 @@ Esto es un fork del [audrey/cookiecutter-pypackage](https://github.com/audreyr/c
 ## Features
 
 * Travis-CI: Preparado para integración continua con Travis CI.
-* Sphinx docs: Documentación preparada para generar con ReadTheDocs.
+* Documentación automática: Documentación preparada para generarse y publicarse en ReadTheDocs.
 * Auto-release a PyPI: Cada vez que se hace un *tag* con una nueva versión, se publica en PyPi automáticamente.
 
 ## Instalación
@@ -37,23 +37,27 @@ Cookiecutter 1.4.0 o mayor)::
 ## Uso
 
 1. Crear un repositorio en Github y clonarlo localmente
-2. `cookiecutter https://github.com/datosgobar/cookiecutter-pypackage-ar.git` para crear estructura del repo. Mover todo el contenido a la carpeta del repo clonado.
+2. Seguir todos los pasos para crear un repositorio usando el template de cookiecutter: `cookiecutter https://github.com/datosgobar/cookiecutter-pypackage-ar.git`. Mover todo el contenido a la carpeta del repo clonado.
 2. `pip install -r requirements_dev.txt` para instalar las dependencias de desarrollo (se recomienda crear un entorno virtual para el proyecto primero)
-3. Ir a tu cuenta de Travis CI y agregar este repo (*switch on*)
-4. `make pypi` para registrar el repo en Pip y activar el auto-deploy con tags en Travis CI (requiere una cuenta en PyPi).
-5. Agregar el repo a tu cuenta de ReadTheDocs y *switch on* para activar el servicio.
+3. Ir a tu cuenta de Travis CI y agregar el nuevo repo (*switch on*)
+    - Modificar el archivo `.travis.yml` eliminando aquellas versiones de python no soportadas y agregando aquellas que sí lo sean
+4. Agregar el repo a tu cuenta de ReadTheDocs y *switch on* para activar el servicio.
   - `make docs` para crear la documentación localmente, luego pushear para que vaya a Read The Docs.
+5. `make pypi` para registrar el repo en Pip y activar el auto-deploy con tags en Travis CI (requiere una cuenta en PyPi).
+    - Esta acción genera *el primer release a pypi*.
 
 Para más detalles ver [cookiecutter-pypackage tutorial](https://cookiecutter-pypackage.readthedocs.io/en/latest/tutorial.html).
 
 ## Release checklist
 
-Antes de cada nuevo release a PyPi, deben seguirse estos pasos:
+**Antes de cada nuevo release a PyPi**, deben seguirse estos pasos:
 
-0. Que corran OK todos los tests
+0. Chequear que todos los tests corran OK
 1. Cambiar la versión en el `setup.py`
-2. Cambiar la versión en el `__init__.py` del package `pydatajson`
-3. Agregar una nueva entrada al `HISTORY.md` bulleteando brevemente las diferencias que tiene el nuevo release respecto del anterior
+2. Cambiar la versión en el `__init__.py` del paquete
+3. Agregar una nueva entrada al `HISTORY.md` bulleteando **brevemente** las diferencias que tiene el nuevo release respecto del anterior, para el usuario del paquete
+    - Recordar cambiar la versión
+    - Recordar cambiar la fecha
 4. Correr `make docs` en el root del repo antes de pushear
 5. Commitear y pushear
 6. Taggear el commit con la versión del nuevo release
