@@ -9,7 +9,6 @@ __pycache__/
 .LSOverride
 
 # Thumbnails
-._*
 
 # Files that might appear in the root of a volume
 .DocumentRevisions-V100
@@ -94,3 +93,5 @@ target/
 # Cookiecutter
 output/
 python_boilerplate/
+
+!docs/_static/*

@@ -11,7 +11,7 @@ cryptography==1.4
 PyYAML==3.11{% endif %}
 {% if cookiecutter.use_pytest == 'y' -%}
 pytest==2.9.2{%- endif %}
-recommonmark
+recommonmark==0.4.0
 twine
 sphinx_rtd_theme
 sphinxcontrib-napoleon
