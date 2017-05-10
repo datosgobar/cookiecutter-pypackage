@@ -72,6 +72,6 @@ Ver repositorio de [audrey/cookiecutter-pypackage](https://github.com/audreyr/co
 
 ## Contacto
 
-Te invitamos a [crearnos un issue](https://github.com/datosgobar/{{ cookiecutter.project_repo_name }}/issues/new?title=Encontre un bug en {{ cookiecutter.project_repo_name }}) en caso de que encuentres algún bug o tengas feedback de alguna parte de `{{ cookiecutter.project_repo_name }}`.
+Te invitamos a [crearnos un issue](https://github.com/datosgobar/cookiecutter-pypackage-ar/issues/) en caso de que encuentres algún bug o tengas feedback de alguna parte de cookiecutter-pypackage-ar.
 
 Para todo lo demás, podés mandarnos tu comentario o consulta a [datos@modernizacion.gob.ar](mailto:datos@modernizacion.gob.ar).
