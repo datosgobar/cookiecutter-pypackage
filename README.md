@@ -37,13 +37,13 @@ Cookiecutter 1.4.0 o mayor)::
 ## Uso
 
 1. Crear un repositorio en Github y clonarlo localmente
-2. Seguir todos los pasos para crear un repositorio usando el template de cookiecutter: `cookiecutter https://github.com/datosgobar/cookiecutter-pypackage-ar.git`. Mover todo el contenido a la carpeta del repo clonado.
-2. `pip install -r requirements_dev.txt` para instalar las dependencias de desarrollo (se recomienda crear un entorno virtual para el proyecto primero)
-3. Ir a tu cuenta de Travis CI y agregar el nuevo repo (*switch on*)
+1. Seguir todos los pasos para crear un repositorio usando el template de cookiecutter: `cookiecutter https://github.com/datosgobar/cookiecutter-pypackage-ar.git`. Mover todo el contenido a la carpeta del repo clonado.
+1. `pip install -r requirements_dev.txt` para instalar las dependencias de desarrollo (se recomienda crear un entorno virtual para el proyecto primero)
+1. Ir a tu cuenta de Travis CI y agregar el nuevo repo (*switch on*)
     - Modificar el archivo `.travis.yml` eliminando aquellas versiones de python no soportadas y agregando aquellas que sí lo sean
-4. Agregar el repo a tu cuenta de ReadTheDocs y *switch on* para activar el servicio.
+1. Agregar el repo a tu cuenta de ReadTheDocs y *switch on* para activar el servicio.
   - `make docs` para crear la documentación localmente, luego pushear para que vaya a Read The Docs.
-5. `make pypi` para registrar el repo en Pip y activar el auto-deploy con tags en Travis CI (requiere una cuenta en PyPi).
+1. `make pypi` para registrar el repo en Pip y activar el auto-deploy con tags en Travis CI (requiere una cuenta en PyPi).
     - Esta acción genera *el primer release a pypi*.
 
 Para más detalles ver [cookiecutter-pypackage tutorial](https://cookiecutter-pypackage.readthedocs.io/en/latest/tutorial.html).
