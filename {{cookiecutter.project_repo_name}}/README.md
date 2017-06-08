@@ -11,6 +11,7 @@
 {{ cookiecutter.project_short_description }}
 
 {% if is_open_source %}
+* Versión python: {{ cookiecutter.python_major_version }}
 * Licencia: {{ cookiecutter.open_source_license }}
 * Documentación: https://{{ cookiecutter.project_repo_name | replace("_", "-") }}.readthedocs.io
 {% endif %}
