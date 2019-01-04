@@ -1,7 +1,7 @@
-Welcome to {{ cookiecutter.project_name }}'s documentation!
+¡Bienvenido a la documentación de {{ cookiecutter.project_name }}!
 ======================================
 
-Contents:
+{{ cookiecutter.project_short_description }}
 
 .. toctree::
    :maxdepth: 2
@@ -10,7 +10,7 @@ Contents:
    {% if cookiecutter.create_author_file == 'y' -%}authors{% endif -%}
    HISTORY.md
 
-Indices and tables
+Indices y tablas
 ==================
 
 * :ref:`genindex`
